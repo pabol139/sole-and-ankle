@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components/macro';
+import React from "react";
+import styled from "styled-components/macro";
 
-import { COLORS } from '../../constants';
+import { COLORS } from "../../constants";
 
 const Breadcrumbs = ({ children }) => {
   return <Wrapper>{children}</Wrapper>;
@@ -22,7 +22,7 @@ const CrumbWrapper = styled.div`
     margin-left: 8px;
 
     &::before {
-      content: '/';
+      content: "/";
       margin-right: 8px;
       color: ${COLORS.gray[300]};
     }
@@ -40,6 +40,8 @@ const CrumbLink = styled.a`
 
 const Wrapper = styled.nav`
   display: flex;
+  height: 42px;
+  align-items: center;
   font-size: 0.875rem;
 `;
 export default Breadcrumbs;
